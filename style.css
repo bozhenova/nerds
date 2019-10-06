@@ -1,0 +1,185 @@
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.products {
+  margin-top: 80px;
+}
+
+.main-header {
+  background-color: #e8e8e8;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
+.main-navigation {
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.site-navigation {
+  width: 620px;
+}
+
+.shopping-cart {
+  max-width: 200px;
+}
+.site-navigation,
+.shopping-cart {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation a,
+.shopping-cart a {
+  color: #000;
+  display: block;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.slider h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.products {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.products-list {
+  list-style: none;
+}
+
+.products-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+.about-us {
+  margin-top: 72px;
+}
+
+.about-us h3,
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  margin: 0;
+
+  color: #000;
+}
+
+.about-us b {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.features {
+  list-style: none;
+}
+.left-column {
+  width: 660px;
+}
+
+.right-column {
+  width: 360px;
+}
+
+.our-clients-logo {
+  list-style: none;
+}
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+}
+
+.address p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social b {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000;
+}
+
+.social p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #fb565a;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+
+  padding: 19px 40px;
+}
+
+.app .btn {
+  background-color: #00ca74;
+}
+
+.presentation .btn {
+  background-color: #efc84a;
+}
+
+.main-header .btn {
+  padding: 19px 54px;
+}
+
+.write-us .btn {
+  padding: 19px 40px;
+}
+
+.modal .btn {
+  padding: 19px 83px;
+}
+
+.modal p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+}

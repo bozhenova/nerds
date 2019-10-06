@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Дизайн-студия Nerds</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <header class="main-header">
+      <div class="container">
       <nav class="main-navigation">
-        <a class="main-header-logo"
-          ><img src="img/index.logo.svg" alt="Логотип дизайн-студии Nerds"
-        /></a>
+        <div class="main-header-logo">
+        <a><img src="img/index.logo.svg" alt="Логотип дизайн-студии Nerds"
+        /></a></div>
+        <div class="main-navigation-wrapper">
 
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
@@ -22,38 +26,42 @@
         <ul class="shopping-cart">
           <li><a href="#">Корзина</a></li>
         </ul>
+        </div>
+        
       </nav>
+
       <section class="slider">
         <section class="slider-1">
-          <h2>Долго, дорого, скрупулезно.</h2>
+          <h2>Долго, дорого,</br> скрупулезно.</h2>
           <p>
-            Математически выверенный дизайн для вашего сайта или мобильного
+            Математически выверенный дизайн</br> для вашего сайта или мобильного
             приложения.
           </p>
           <div class="slider-1-picture"><img /></div>
         </section>
 
         <section class="slider-2">
-          <h2>Любим математику как никто другой</h2>
+          <h2>Любим математику</br> как никто другой</h2>
           <p>
-            Никакого креатива, только математические формулы для расчета
+            Никакого креатива, только математические формулы</br> для расчета
             идеальных пропорций.
           </p>
           <div class="slider-2-picture"><img /></div>
         </section>
 
         <section class="slider-3">
-          <h2>Только ночь, только хардкор</h2>
+          <h2>Только ночь,</br> только хардкор</h2>
           <p>
-            Работать днем, как все? Мы против этого. Ближе к полуночи работа
+            Работать днем, как все? Мы против этого.</br> Ближе к полуночи работа
             только начинается.
           </p>
           <div class="slider-3-picture"><img /></div>
         </section>
         <a class="btn">Узнать больше</a>
       </section>
+      </div>
     </header>
-    <main>
+    <main class="container">
       <section class="products">
         <h2 class="visually-hidden">Продукты студии</h2>
 
@@ -80,46 +88,56 @@
       </section>
       <section class="about-us">
         <h2 class="visually-hidden">О студии</h2>
+        <div class="left-column">
         <h3>Мы — маленькая, но гордая
 дизайн-студия из Краснодара.</h3>
 <p>
   Исповедуем принципы минимализма и чистоты. Ставим математический расчет
 превыше креатива. Работаем не покладая рук, как роботы.
 </p>
-<p>Выполняем заказы на разработку:</p>
-<ul>
+<b>Выполняем заказы на разработку:</b>
+<ul class="features">
 	<li>Веб-сайтов любой сложности</li>
 
 	<li>Мобильных приложений для iOS и Android</li>
 
 	<li>Слайдшоу и видео для корпоративных презентаций</li>
-
-<p>С 2004 года любим точность во всем:</p>
+</div>
+<div class="right-column">
+<b>С 2004 года любим точность во всем:</b>
 
   <p>Уровень самоотдачи</p>
   <p>Соблюдение сроков</p>
   <p>Минимальная предоплата</p>
+  </div>
         </section>
       <section class="our-clients">
          <h2 class="visually-hidden">Наши клиенты</h2>
-        <ul>
-          <li><img src="" alt="Логотип HTML Academy"></li>
-          <li><img src="" alt="Логотип барбершопа «Бородинский»"></li>
-          <li><img src="" alt="Логотип Pink"></li>
-          <li><img src="" alt="Логотип Mishka"></li>
+        <ul class="our-clients-logo">
+          <li><img src="img/html-academy-logo.png" alt="Логотип HTML Academy"></li>
+          <li><img src="img/borodinski-logo.png" alt="Логотип барбершопа «Бородинский»"></li>
+          <li><img src="img/pink-logo.png" alt="Логотип Pink"></li>
+          <li><img src="img/mishka-logo.png" alt="Логотип Mishka"></li>
         </ul>
       </section>
       <div class="contacts">
-        <iframe></iframe>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570232155411!5m2!1sru!2sru"
+        width="1440"
+        height="416"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen="true"
+      ></iframe>
         <p><img></p>
-        <div class="adress"><div class="contacts-title">NЁRDS DESIGN STUDIO</div><p>191186, Санкт-Петербург,</br> 
+        <div class="address"><div class="contacts-title"><b>NЁRDS DESIGN STUDIO</b></div><p>191186, Санкт-Петербург,</br> 
 ул. Б. Конюшенная, д. 19/8</br></p>
 
 <p>тел. +7 (812) 275-75-75</p>
-<div class="write-to-us"><a href="#" class="btn">Напишите нам</a></div></div>
+<div class="write-us"><a href="#" class="btn">Напишите нам</a></div></div>
       </div>
     </main>
-    <footer>
+    <footer class="social">
       <ul>
         <li><a class="social-btn" href="#"><span class="visually-hidden">Вконтакте</span><svg></svg></a></li>
         <li><a class="social-btn" href="#"><span class="visually-hidden">Фейсбук</span><svg></svg></a></li>
