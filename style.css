@@ -6,8 +6,8 @@ body {
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
-  color: #283136;
+  font-weight: 400;
+  color: #000000;
   background-color: #ffffff;
 }
 
@@ -43,10 +43,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  background-color: #e8e8e8;
-  padding: 0;
-  margin: 0;
-  min-height: 545px;
+  background-color: #eeeeee;
 }
 
 .main-header-logo {
@@ -98,49 +95,118 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .slider {
-  margin: 0;
+  position: relative;
+  background-color: #eeeeee;
   padding: 0;
+  margin: 0;
 }
 
-.slider-1 {
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  width: 160px;
+  height: 18px;
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls i {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls i::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.slider-controls .active::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slider-item {
+  display: none;
+  padding: 70px 0 80px;
+}
+
+.slider-item:nth-child(3) {
+  display: block;
+}
+
+.slider-item:nth-child(1) {
   background-image: url("img/slide1.png");
   background-repeat: no-repeat;
-  background-position: right center;
-  min-height: 420px;
+  background-position: 93% 18px;
 }
-.slider-2 {
+
+.slider-item:nth-child(2) {
   background-image: url("img/slide2.png");
   background-repeat: no-repeat;
-  background-position: right center;
-  min-height: 420px;
+  background-position: 100% 0;
 }
-.slider-3 {
+
+.slider-item:nth-child(3) {
   background-image: url("img/slide3.png");
   background-repeat: no-repeat;
-
-  background-position: right center;
-  min-height: 420px;
+  background-position: 100% 20px;
 }
 
-.slider h2 {
+.slider-item h3 {
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
   margin: 0;
-  padding: 0;
-  margin-top: 65px;
+  margin-bottom: 27px;
+  max-width: 600px;
 }
 
-.slider p {
+.slider-item p {
   margin: 0;
-  padding: 0;
-  padding-top: 22px;
-  padding-bottom: 42px;
+  margin-bottom: 38px;
+  max-width: 430px;
 }
 
 .slider .btn {
@@ -334,7 +400,6 @@ input[type="radio"].visually-hidden {
 }
 
 .social-list a {
-  
 }
 .social b {
   font-size: 36px;
@@ -348,7 +413,8 @@ input[type="radio"].visually-hidden {
   color: #444444;
 }
 .btn {
-  display: inline-block;
+  display: block;
+  width: 240px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -356,9 +422,9 @@ input[type="radio"].visually-hidden {
   background-color: #fb565a;
   border: none;
   text-align: center;
-  vertical-align: middle;
-
-  padding: 19px 40px;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 13px 0;
 }
 .btn:hover,
 .btn:focus {
@@ -367,7 +433,17 @@ input[type="radio"].visually-hidden {
 
 .btn:active {
   background-color: #d7373b;
-  color: #eb9e9f;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.products-item .btn {
+  width: 160px;
+}
+
+.products-item .btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .app .btn {
@@ -381,7 +457,6 @@ input[type="radio"].visually-hidden {
 
 .app .btn:active {
   background-color: #00aa62;
-  color: #87d6b5;
 }
 
 .presentation .btn {
@@ -395,7 +470,6 @@ input[type="radio"].visually-hidden {
 
 .presentation .btn:active {
   background-color: #e5a722;
-  color: #f2d494;
 }
 
 .main-header .btn {
