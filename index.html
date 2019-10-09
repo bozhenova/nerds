@@ -157,7 +157,7 @@
 ул. Б. Конюшенная, д. 19/8</br></p>
 
 <p>тел. +7 (812) 275-75-75</p>
-<div class="write-us"><a href="#" class="btn">Напишите нам</a></div></div>
+<button class="write-us btn">Напишите нам</button></div>
       </div>
     </main>
     <footer class="social">
@@ -170,15 +170,30 @@
       <b>Давайте дружить, это выгодно!</b><p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <section class="modal">
+    <section class="modal modal-feedback">
       <h2>Напишите нам</h2>
-      <form>
-        <p><label>Ваше имя:</label><input></p>
-        <p><label>Ваш e-mail:</label><input></p>
-        <p><label>Текст письма:</label><textarea></textarea></p>
+      <form
+            class="modal-feedback-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+        <p class="feedback-form"><label for="name">Ваше имя:</label><input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Имя Фамилия"
+          /></p>
+        <p class="feedack-form"><label for="email">Ваш e-mail:</label><input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          /></p>
+        <p class="feedback-form-textarea"><label for="feedback">Текст письма:</label><textarea id="feedback" name="feedback" placeholder="В свободной форме"></textarea></p>
         <button class="btn" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

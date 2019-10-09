@@ -415,8 +415,6 @@ input[type="radio"].visually-hidden {
   padding-left: 10px;
 }
 
-.social-list a {
-}
 .social b {
   font-size: 36px;
   line-height: 36px;
@@ -441,6 +439,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   border-radius: 3px;
   padding: 13px 0;
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
@@ -496,15 +495,178 @@ input[type="radio"].visually-hidden {
   padding: 19px 40px;
 }
 
+.modal {
+  position: fixed;
+
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.modal-close {
+  position: absolute;
+  top: 72px;
+  right: 110px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background: url("img/close-cross.svg") no-repeat center;
+  opacity: 0.3;
+}
+.feedback-form p,
+.feedback-form-textarea p {
+  margin: 0;
+  padding: 0;
+}
+.modal input[type="text"],
+.modal input[type="email"],
+.modal textarea {
+  box-sizing: border-box;
+  font-size: inherit;
+  line-height: 18px;
+  color: #444444;
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+  padding: 14px;
+  margin: 0;
+}
+
+.modal input[type="text"]:hover,
+.modal input[type="email"]:hover,
+.modal textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal input[type="text"]:focus,
+.modal input[type="email"]:focus,
+.modal textarea:focus {
+  border: 2px solid #000000;
+}
+
+.modal input[type="text"]:invalid,
+.modal input[type="email"]:invalid,
+.modal textarea:invalid {
+  color: #e74246;
+  background-color: #e74246;
+}
+
+.modal input[type="text"],
+.modal input[type="email"] {
+  margin-right: 40px;
+  width: 360px;
+  margin-bottom: 17px;
+}
+
+.modal input[type="email"] {
+  margin-right: 0;
+}
+.modal textarea {
+  width: 760px;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.modal-feedback {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 760px;
+  padding: 66px 100px 85px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal-feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 760px;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-feedback-form label {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 .modal .btn {
-  padding: 19px 83px;
+  padding: 0;
+  padding: 21px 80px 20px 75px;
   cursor: pointer;
 }
 
-.modal p {
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000;
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.modal-close:hover::after,
+.modal-close:focus::after {
+  opacity: 1;
+}
+
+.modal-close:active::after {
+  opacity: 0.1;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 footer {
