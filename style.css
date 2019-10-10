@@ -19,6 +19,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   pointer-events: none;
+  z-index: 998;
 }
 
 #overlay.active {
@@ -649,6 +650,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   color: #000000;
+  z-index: 999;
 }
 
 .modal-close {
