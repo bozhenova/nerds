@@ -53,10 +53,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.products {
-  margin-top: 80px;
-}
-
 .main-header {
   background-color: #eeeeee;
 }
@@ -64,10 +60,9 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
   display: block;
   width: 160px;
-  margin: 0;
   height: 65px;
-  padding: 50px;
-  padding-left: 0;
+  margin-bottom: -20px;
+
   opacity: 1;
 }
 
@@ -85,24 +80,10 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #000000;
   display: flex;
-}
-
-.main-navigation-wrapper {
-  display: flex;
   justify-content: space-between;
-}
-
-.site-navigation {
-  width: 620px;
-}
-
-.user-navigation {
-  max-width: 200px;
-  display: flex;
-}
-
-.shopping-cart {
-  padding-left: 50px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  font-weight: 500;
 }
 
 .site-navigation,
@@ -111,14 +92,42 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
+
+  justify-content: space-between;
 }
 
 .site-navigation a,
 .user-navigation a {
   color: #000000;
   display: block;
+  margin: 82px 0 0 0;
+}
 
-  padding: 82px 0px 0 48px;
+.site-navigation {
+  flex-basis: 440px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-navigation {
+  display: flex;
+  max-width: 115px;
+}
+
+.shopping-cart {
+  padding-left: 41px;
+  position: relative;
+}
+
+.shopping-cart::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 5px;
+
+  width: 15px;
+  height: 15px;
+  background: url(img/cart-icon.svg) no-repeat 0 0;
 }
 
 .site-navigation a:hover,
@@ -141,7 +150,6 @@ input[type="radio"].visually-hidden {
 
 .slider {
   position: relative;
-  background-color: #eeeeee;
 }
 
 .slider input[type="radio"] {
@@ -197,6 +205,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
 }
+
 .slider-item {
   display: none;
   min-height: 275px;
@@ -209,19 +218,19 @@ input[type="radio"].visually-hidden {
 .slider-item:nth-child(1) {
   background-image: url("img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 19px;
+  background-position: 93% 25px;
 }
 
 .slider-item:nth-child(2) {
   background-image: url("img/slide2.png");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 100% 3px;
 }
 
 .slider-item:nth-child(3) {
   background-image: url("img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 100% 21px;
+  background-position: 100% 22px;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"]::after,
@@ -253,8 +262,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item p {
   margin: 0;
-  margin-bottom: 44px;
-  max-width: 430px;
+  margin-bottom: 42px;
 }
 
 #btn-1:checked ~ .slider-list .slider-item:nth-child(1),
@@ -265,7 +273,9 @@ input[type="radio"].visually-hidden {
 
 .products {
   margin-top: 80px;
-  margin-bottom: 80px;
+
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .products-list {
@@ -301,25 +311,23 @@ input[type="radio"].visually-hidden {
   margin-bottom: 35px;
 }
 
-.wrapper {
+.about-us {
+  padding: 0;
+  margin: 0;
+  margin-top: 41px;
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  width: 1160px;
 }
 
-.about-us {
-  margin-top: 72px;
-  padding: 0;
-  margin: 0;
-}
-
-.about-us h3,
+.left-column h3,
 .modal h2 {
   font-size: 45px;
   line-height: 45px;
   margin: 0;
   padding: 0;
+  font-weight: 500;
 
   color: #000000;
 }
@@ -329,28 +337,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-}
-
-.features {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.features li {
-  padding-top: 30px;
-  margin-left: 37px;
-  position: relative;
-}
-
-.features li::before {
-  content: "";
-  position: absolute;
-  top: 39px;
-  left: -36px;
-  width: 25px;
-  height: 2px;
-  background-color: #fb565a;
 }
 
 .left-column {
@@ -365,6 +351,39 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.left-column p {
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  padding-bottom: 44px;
+}
+
+.right-column li {
+  line-height: 18px;
+}
+
+.features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features li {
+  padding-top: 31px;
+  margin-left: 37px;
+  position: relative;
+}
+
+.features li::before {
+  content: "";
+  position: absolute;
+  top: 39px;
+  left: -36px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
 .statistics {
   margin: 0;
   padding: 0;
@@ -372,46 +391,42 @@ input[type="radio"].visually-hidden {
 }
 
 .statistics b {
+  display: block;
   text-align: center;
 }
 
-.statistics li {
+.statistics p {
+  margin: 0;
+  padding: 0;
+}
+
+.statistics-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics-list li {
   margin: 0;
   padding: 0;
   position: relative;
-  padding-top: 80px;
+  margin-top: 110px;
+  min-width: 115px;
 }
 
-.statistics-list ul {
-  margin-top: 30px;
+.statistics-list li:not(:last-of-type) {
+  margin-right: 10px;
 }
 
-.statistics-1::before {
-  content: "146%";
+.statistics-list span {
   position: absolute;
-  display: inline-block;
-  top: 40px;
-  left: 0px;
-  font-size: 35px;
-}
-
-.statistics-2::before {
-  content: "100%";
-  position: absolute;
-  display: inline-block;
-  top: 40px;
-  left: 0px;
-  font-size: 35px;
-}
-
-.statistics-3::before {
-  content: "50%";
-  position: absolute;
-  display: inline-block;
-  top: 40px;
-  left: 0px;
-  font-size: 35px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  top: -62px;
+  left: 0;
 }
 
 .our-clients {
@@ -419,7 +434,7 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid #eeeeee;
   padding: 47px 43px 40px 31px;
   margin-bottom: 80px;
-  margin-top: 72px;
+  margin-top: 77px;
 }
 
 .our-clients-logo {
@@ -627,7 +642,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header .btn {
-  padding: 19px 54px;
+  padding: 19px 0;
 }
 
 #map {
@@ -730,9 +745,11 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 180px;
+  left: 380px;
+
+  margin-left: auto;
+  margin-right: auto;
   width: 760px;
   padding: 66px 100px 85px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
