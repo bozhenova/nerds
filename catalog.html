@@ -46,9 +46,29 @@
 <main>
   <section class="catalog container">
   <section class="filter">
-    <div>Стоимость</div>
-    <div>Сетка</div>
-    <div>Особенности</div>
+     <h2 class="visually-hidden">Фильтр товаров</h2>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru/"></form>
+    <fieldset><legend>Стоимость</legend>
+      <input type="range" min="100" max="15000" step="1" value="10000" id="price" name="price">
+    </fieldset>
+    <fieldset> <legend>Сетка</legend>
+    <ul>
+      <li><input type="radio" id="layout" name="layout"><label>Адаптивная</label></li>
+      
+    <li><input type="radio" id="layout" name="layout"><label>Фиксированная</label></li>
+    <li><input type="radio" id="layout" name="layout"><label>Резиновая</label></li>
+    </ul>
+    </fieldset>
+    <legend>Особенности</legend>
+    <ul>
+      <li><input type="checkbox" id="" name=""><label>Слайдер</label></li>
+    <li><input type="checkbox" id="" name=""><label>Блок преимуществ</label></li>
+    <li><input type="checkbox" id="" name=""><label>Новости</label></li>
+    <li><input type="checkbox" id="" name=""><label>Галерея</label></li>
+    <li><input type="checkbox" id="" name=""><label>Корзина</label></li>
+    </ul>
+      <button type="submit" class="filter-button button">Показать</button>
+        </form>
   </section>
 <section class="templates">
   <div><img src="img/sedona.jpg" width="360" height="576" alt=""></div>
