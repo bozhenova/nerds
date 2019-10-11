@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Дизайн-студия Nerds</title>
     <link rel="stylesheet" href="normalize.css" />
@@ -36,8 +37,6 @@
         <ul class="user-navigation">
           <li><a class="shopping-cart" href="#">Корзина</a></li>
         </ul>
-        
-        
         </nav>
         
       <h1 class="visually-hidden">Сайт Nerds</h1>
@@ -86,7 +85,7 @@
     </header>
     <main>
       
-      <div class="container">
+      <div class="company container">
       <section class="products">
         <h2 class="visually-hidden">Продукты студии</h2>
 
@@ -153,15 +152,17 @@
       </div>
       </section>
       <section class="map">
+      
       <div id="map"></div>
       <p>
         <img
           src="img/map.png"
           width="100%"
-          height="416"
+          height="auto"
           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
         />
-      </p>
+        </p>
+      
       <div class="contacts container">
         <div class="contacts-info"><h3><b>NЁRDS DESIGN STUDIO</b></h3><p>191186, Санкт-Петербург,</br> 
 ул. Б. Конюшенная, д. 19/8</br></p>
@@ -169,6 +170,7 @@
 <p>тел. +7 (812) 275-75-75</p>
 <button class="write-us btn">Напишите нам</button></div>
 </div>
+
       </section>
     </main>
     <footer class="main-footer">
@@ -181,11 +183,11 @@
       </ul></div>
       <div class="footer-text">
       <b>Давайте дружить, это выгодно!</b><p>Скидка 10% для друзей из социальных сетей.</p>
-      
       </div>
       </div>
       <div id="overlay"></div>
     </footer>
+    
     <section class="modal modal-feedback">
       <h2>Напишите нам</h2>
       <form
@@ -217,7 +219,7 @@
       src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
       type="text/javascript"
     ></script>
-    <script src="main.js" type="text/javascript"></script>
+    <script src="map.js" type="text/javascript"></script>
   </body>
 </html>
 
