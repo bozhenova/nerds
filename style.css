@@ -968,14 +968,7 @@ input[type="radio"].visually-hidden {
 }
 
 .templates {
-  display: flex;
   width: 760px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.pagination li {
-  list-style: none;
 }
 
 .templates h3 {
@@ -983,11 +976,29 @@ input[type="radio"].visually-hidden {
 }
 
 .templates-filter {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
 
+.templates-filter h3 {
+  display: block;
+}
+.templates-filter-list {
+  width: 366px;
+}
+.templates-filter-list ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
+
+.templates-filter-dir {
+  margin-left: 18px;
+}
+
 .templates-filter button {
   border: none;
   padding: 0;
@@ -996,6 +1007,11 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.templates-filter-dir path {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .templates-filter button:hover,
@@ -1003,7 +1019,49 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.templates-filter-dir:hover path,
+.templates-filter-dir.active path {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
 .templates-filter button:active,
 .templates-filter-item.active {
   color: #000000;
+}
+
+.templates-filter-dir button:active path,
+.templates-filter-dir.active path {
+  fill: #000000;
+}
+
+.templates-filter-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.templates-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pagination-item:not(:last-of-type) {
+  margin-right: 11px;
+}
+
+.pagination-item a {
+  color:#000000;
+  background-color: #eeeeee;
+  display: block;
+  padding: 10px 19px;
+
+  
 }

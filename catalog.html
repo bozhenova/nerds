@@ -73,14 +73,20 @@
   </section>
 <section class="templates">
   <h2 class="visually-hidden">Шаблоны</h2>
+  <div class="templates-filter">
   <h3>Сортировать:</h3>
-  <ul class="templates-filter">
+  <div class="templates-filter-list">
+    <ul>
     <li><button class="templates-filter-item active">По цене</button></li>
     <li><button class="templates-filter-item">По типу</button></li>
     <li><button class="templates-filter-item">По названию</button></li>
-    <li><button class="templates-filter-item"><img src="img/icon-down-dir.svg"></button></li>
-    <li><button class="templates-filter-item"><img src="img/icon-up-dir.svg"</button></li>
-  </ul>
+    <ul>
+      <ul>
+    <li><button class="templates-filter-dir active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></button></li>
+    <li><button class="templates-filter-dir"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></button></li>
+    </ul>
+  </div>
+  </div class="templates-info">
   <div><img src="img/sedona.jpg" width="360" height="576" alt="Шаблон Sedona"></div>
   <div><img src="img/pink.jpg" width="360" height="576" alt="Шаблон Pink"></div>
   <div><img src="img/barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop"></div>
@@ -90,7 +96,7 @@
 </section>
 </section>
 <ul class="pagination">
-          <li class="pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a>2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li><button class="pagination-btn btn">Следующая</button></li>
