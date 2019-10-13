@@ -420,13 +420,23 @@ input[type="radio"].visually-hidden {
   margin-right: 10px;
 }
 
-.statistics-list span {
-  position: absolute;
-  font-weight: bold;
+.statistics-item {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+}
+.statistics-list span:nth-child(1n) {
   font-size: 45px;
-  line-height: 45px;
-  top: -62px;
-  left: 0;
+  line-height: 10px;
+}
+
+.statistics-list span:nth-child(2n) {
+  font-size: 25px;
+  line-height: 20px;
 }
 
 .our-clients {
@@ -956,11 +966,14 @@ input[type="radio"].visually-hidden {
 
 .filter-btn:hover,
 .filter-btn:focus,
+.pagination-item a:hover,
+.pagination-item a:focus,
 .pagination-btn:hover,
 .pagination-btn:focus {
   background-color: #dfdfdf;
 }
 .filter-btn:active,
+.pagination-item a:active,
 .pagination-btn:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.5);
@@ -1052,16 +1065,30 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.pagination-item {
+  box-sizing: border-box;
 }
 .pagination-item:not(:last-of-type) {
   margin-right: 11px;
 }
 
 .pagination-item a {
-  color:#000000;
+  color: #000000;
   background-color: #eeeeee;
   display: block;
-  padding: 10px 19px;
+  padding: 19px 23px;
+  font-weight: 600;
+}
 
-  
+.pagination-item-current a {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+
+.pagination-btn {
+  padding: 19px 0;
+  width: 260px;
+  box-sizing: border-box;
 }
