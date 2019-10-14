@@ -991,15 +991,15 @@ input[type="radio"].visually-hidden {
 .templates-filter {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .templates-filter h3 {
   display: block;
+  width: 400px;
 }
 .templates-filter-list {
-  width: 366px;
-}
-.templates-filter-list ul {
+  width: 280px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -1009,7 +1009,11 @@ input[type="radio"].visually-hidden {
 }
 
 .templates-filter-dir {
-  margin-left: 18px;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 42px;
 }
 
 .templates-filter button {
@@ -1022,8 +1026,11 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+.templates-filter-dir-item {
+  margin-left: 18px;
+}
 
-.templates-filter-dir path {
+.templates-filter-dir-item path {
   fill: rgba(0, 0, 0, 0.2);
 }
 
@@ -1032,8 +1039,8 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.templates-filter-dir:hover path,
-.templates-filter-dir.active path {
+.templates-filter-dir-item:hover path,
+.templates-filter-dir-item.active path {
   fill: rgba(0, 0, 0, 0.5);
 }
 
@@ -1042,15 +1049,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.templates-filter-dir button:active path,
-.templates-filter-dir.active path {
+.templates-filter-dir-item:active path,
+.templates-filter-dir-item.active path {
   fill: #000000;
-}
-
-.templates-filter-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .templates-info {
