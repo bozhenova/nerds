@@ -880,15 +880,83 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 }
 
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  margin-bottom: 14px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-controls .bar {
+  height: 2px;
+  background-color: #00ca74;
+  width: 70%;
+}
+
+.toggle {
+  position: absolute;
+  top: 31px;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  background-color: #ababab;
+
+  border: 8px solid #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  margin-left: 10px;
+}
+
+.max-price {
+  text-align: right;
+}
 .layout {
   margin-top: 60px;
-}
-
-.price legend {
-  padding-bottom: 185px;
 }
 
 .features legend {
@@ -897,6 +965,17 @@ input[type="radio"].visually-hidden {
 
 .layout legend {
   padding-top: 60px;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
 }
 
 .filter ul {
