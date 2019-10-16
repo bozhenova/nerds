@@ -1137,6 +1137,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 22px;
+}
+
+.templates-info img {
+  margin-top: 33px;
 }
 
 .pagination {
