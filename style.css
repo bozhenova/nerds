@@ -1,8 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 800px;
   margin: 0;
   padding: 0;
-
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -475,7 +478,7 @@ input[type="radio"].visually-hidden {
 .contacts-info {
   position: absolute;
   z-index: 100;
-  top: -365px;
+  top: -493px;
   left: 0;
   margin: 0;
   width: 220px;
@@ -663,7 +666,8 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  /* position: relative; */
+  position: relative;
+
   z-index: 1;
 }
 
@@ -674,7 +678,8 @@ input[type="radio"].visually-hidden {
 
 .map img {
   margin: 0 auto;
-  z-index: 1;
+
+  opacity: 0;
 }
 
 .modal {
@@ -1150,12 +1155,14 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
   margin: 60px 0;
 }
+
 .pagination-item {
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
 .pagination-item:not(:last-of-type) {
   margin-right: 11px;
 }
@@ -1164,17 +1171,21 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #eeeeee;
   display: block;
-  padding: 19px 23px;
+  padding: 17px 23px;
   font-weight: 600;
+  line-height: 18px;
+  border-radius: 3px;
 }
 
 .pagination-item-current a {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
+  padding: 14px 20px;
 }
 
 .pagination-btn {
-  padding: 19px 0;
+  padding: 17px 0;
   width: 260px;
   box-sizing: border-box;
+  border-radius: 3px;
 }
