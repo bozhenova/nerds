@@ -1151,6 +1151,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin: 60px 0;
 }
 .pagination-item {
   box-sizing: border-box;
