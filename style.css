@@ -13,7 +13,7 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
-#overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +25,7 @@ body {
   z-index: 998;
 }
 
-#overlay.active {
+.overlay .active {
   opacity: 1;
   pointer-events: auto;
 }
@@ -53,6 +53,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
+  padding-top: 49px;
   background-color: #eeeeee;
 }
 
@@ -60,7 +61,6 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 160px;
   height: 65px;
-  margin-bottom: -20px;
 
   opacity: 1;
 }
@@ -91,7 +91,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -99,13 +98,14 @@ input[type="radio"].visually-hidden {
 .user-navigation a {
   color: #000000;
   display: block;
-  margin: 82px 0 0 0;
+  margin-bottom: 10px;
 }
 
 .site-navigation {
   flex-basis: 440px;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -40px;
 }
 
 .user-navigation {
@@ -143,8 +143,8 @@ input[type="radio"].visually-hidden {
 
 .container {
   width: 1160px;
-  margin: 0 auto;
-  padding: 0;
+  padding: 0 140px;
+  margin: 0;
 }
 
 .slider {
@@ -265,7 +265,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item p {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 }
 
 #btn-1:checked ~ .slider-list .slider-item:nth-child(1),
