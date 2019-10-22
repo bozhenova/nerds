@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  min-width: 800px;
+  min-width: 900px;
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
@@ -53,7 +53,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  padding-top: 49px;
   background-color: #eeeeee;
 }
 
@@ -83,6 +82,8 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   align-items: flex-end;
   font-weight: 500;
+  padding-top: 49px;
+  margin-left: 140px;
 }
 
 .site-navigation,
@@ -105,11 +106,9 @@ input[type="radio"].visually-hidden {
   flex-basis: 440px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -40px;
 }
 
 .user-navigation {
-  display: flex;
   max-width: 115px;
 }
 
@@ -141,10 +140,15 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.site-navigation-current,
+.user-navigation-current {
+  border-bottom: 2px solid #fb565a;
+}
+
 .container {
   width: 1160px;
-  padding: 0 140px;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .slider {
@@ -1002,10 +1006,12 @@ input[type="radio"].visually-hidden {
 
 .filter-input-radio + label {
   margin-top: 22px;
+  opacity: 0.8;
 }
 
 .filter-input-checkbox + label {
   margin-top: 23px;
+  opacity: 0.8;
 }
 
 .filter-input-checkbox + label::before {
@@ -1018,9 +1024,26 @@ input[type="radio"].visually-hidden {
   top: -4px;
   left: -38px;
 }
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:hover + label,
+.filter-input-radio:hover + label::before,
+.filter-input-radio:hover + label {
+  opacity: 1;
+}
 
 .filter-input-checkbox:checked + label::before {
   background: url("img/checkbox-on.svg") no-repeat 0 0;
+}
+
+.filter-input-checkbox:checked:disabled + label::before,
+.filter-input-checkbox:checked:disabled + label,
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:disabled + label,
+.filter-input-radio:checked:disabled + label::before,
+.filter-input-radio:checked:disabled + label,
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label {
+  opacity: 0.3;
 }
 
 .filter-input-radio + label::before {
@@ -1181,6 +1204,8 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
   padding: 14px 20px;
+  pointer-events: none;
+  cursor: pointer;
 }
 
 .pagination-btn {
