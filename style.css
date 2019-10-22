@@ -899,6 +899,7 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
   border-radius: 5px;
   margin-bottom: 14px;
+  margin-top: 54px;
   padding-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1165,11 +1166,30 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 22px;
+  margin-top: 14px;
 }
 
 .templates-info img {
-  margin-top: 33px;
+  margin-top: 74px;
+}
+
+.templates-img {
+  position: relative;
+}
+
+.templates-img::after {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: 0;
+  width: 360px;
+  height: 40px;
+  background: url("img/browser.svg") no-repeat 0 0;
+  opacity: 1;
+}
+
+.templates-img:hover::after {
+  opacity: 0.1;
 }
 
 .pagination {
