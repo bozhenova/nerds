@@ -885,7 +885,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filters legend,
-.templates h3 {
+.templates h3,
+.templat header {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1106,6 +1107,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 400px;
 }
+
 .templates-filter-list {
   width: 280px;
   list-style: none;
@@ -1167,6 +1169,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 14px;
+  position: relative;
 }
 
 .templates-info img {
@@ -1175,9 +1178,10 @@ input[type="radio"].visually-hidden {
 
 .templates-img {
   position: relative;
+  cursor: pointer;
 }
 
-.templates-img::after {
+.templates-item::before {
   content: "";
   position: absolute;
   top: 34px;
@@ -1188,8 +1192,52 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.templates-img:hover::after {
+.templates-item:hover::before {
   opacity: 0.1;
+}
+
+.templates-description {
+  position: absolute;
+  display: none;
+  top: 420px;
+  left: 0px;
+  width: 360px;
+  height: 157px;
+  background-color: #eeeeee;
+  text-align: center;
+  z-index: 10;
+  padding: 30px 0 43px;
+}
+
+.templates-description header {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.templates-description p {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 19px;
+}
+
+.templates-description button {
+  margin: 0 auto;
+  padding: 15px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.templates-item:hover .templates-description {
+  display: block;
 }
 
 .pagination {
