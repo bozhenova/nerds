@@ -900,8 +900,8 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
   border-radius: 5px;
   margin-bottom: 14px;
-  margin-top: 54px;
-  padding-top: 39px;
+  margin-top: 49px;
+  padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -943,14 +943,19 @@ input[type="radio"].visually-hidden {
 .price-controls {
   font-size: 0;
 }
+
 .price-controls label {
   display: inline-block;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .price-controls input {
+  display: inline-block;
   width: 60px;
   padding: 8px 10px;
   font-family: inherit;
@@ -961,6 +966,7 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   background-color: #f1f1f1;
   margin-left: 10px;
+  vertical-align: middle;
 }
 
 .max-price {
@@ -971,7 +977,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features legend {
-  padding-top: 51px;
+  padding-top: 50px;
 }
 
 .layout legend {
@@ -984,9 +990,8 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.range-filter {
+.range-filters {
   width: 260px;
-  margin-top: 49px;
 }
 
 .filter ul {
@@ -996,6 +1001,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
+
 .filter-option {
   padding-left: 36px;
 }
@@ -1007,12 +1013,12 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-radio + label {
-  margin-top: 22px;
+  margin-top: 19px;
   opacity: 0.8;
 }
 
 .filter-input-checkbox + label {
-  margin-top: 23px;
+  margin-top: 19px;
   opacity: 0.8;
 }
 
@@ -1024,7 +1030,7 @@ input[type="radio"].visually-hidden {
   background: url("img/checkbox-off.svg") no-repeat 0 0;
   opacity: 0.5;
   top: -4px;
-  left: -38px;
+  left: -36px;
 }
 .filter-input-checkbox:hover + label::before,
 .filter-input-checkbox:hover + label,
@@ -1055,7 +1061,7 @@ input[type="radio"].visually-hidden {
   height: 25px;
   background: url("img/radio-off.svg") no-repeat 0 0;
   opacity: 0.5;
-  top: -3px;
+  top: -4px;
   left: -36px;
 }
 .filter-input-radio:checked + label::before {
@@ -1169,7 +1175,6 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 14px;
-  position: relative;
 }
 
 .templates-info img {
@@ -1181,7 +1186,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.templates-item::before {
+.templates-img::before {
   content: "";
   position: absolute;
   top: 34px;
@@ -1189,11 +1194,15 @@ input[type="radio"].visually-hidden {
   width: 360px;
   height: 40px;
   background: url("img/browser.svg") no-repeat 0 0;
+  opacity: 0.1;
+}
+
+.templates-img:hover::before {
   opacity: 1;
 }
 
-.templates-item:hover::before {
-  opacity: 0.1;
+.templates-item {
+  position: relative;
 }
 
 .templates-description {
