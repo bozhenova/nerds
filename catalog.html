@@ -40,15 +40,18 @@
         </ul>
         
         </nav>
+        <h1 class="visually-hidden">Сайт Nerds</h1>
         <div class="page-title">
-        <h3>Магазин готовых шаблонов</h3>
+        <h2>Магазин готовых шаблонов</h2>
         </div>
         </div>
 </header>
 <main>
+  
   <section class="catalog container">
+    <h3 class="visually-hidden">Фильтр шаблонов</h3>
   <section class="filters">
-     <h2 class="visually-hidden">Фильтр товаров</h2>
+     <h3 class="visually-hidden">Фильтр</h3>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
     <fieldset class="filter-item">
       <legend>Стоимость:</legend>
@@ -69,7 +72,7 @@
     <fieldset class="layout"> <legend>Сетка:</legend>
     <ul>
       <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="adaptive" name="layout" value="adaptive"><label for="adaptive">Адаптивная</label></li>
-    <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="fixed" name="layout" value="fixed" disabled checked><label for="fixed">Фиксированная</label></li>
+    <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="fixed" name="layout" value="fixed" checked><label for="fixed">Фиксированная</label></li>
     <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" id="fluid" name="layout" value="fluid"><label for="fluid">Резиновая</label></li>
     </ul>
     </fieldset>
@@ -77,8 +80,8 @@
     <legend>Особенности:</legend>
     <ul>
       <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="slider" name="features" value="slider"><label for="slider">Слайдер</label></li>
-    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="features-block" name="features" value="features-block" ><label for="features-block">Блок преимуществ</label></li>
-    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="news" name="features" value="news"><label for="news">Новости</label></li>
+    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="features-block" name="features" value="features-block" checked><label for="features-block">Блок преимуществ</label></li>
+    <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="news" name="features" value="news" disabled><label for="news">Новости</label></li>
     <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="gallery" name="features" value="gallery"><label for="gallery">Галерея</label></li>
     <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="shopping-cart" name="features" value="shopping-cart"><label for="shopping-cart">Корзина</label></li>
     </ul>
@@ -87,9 +90,9 @@
         </form>
   </section>
 <section class="templates">
-  <h2 class="visually-hidden">Шаблоны</h2>
+  <h3 class="visually-hidden">Шаблоны</h3>
   <div class="templates-filter">
-  <h3>Сортировать:</h3>
+  <h4>Сортировать:</h4>
   <ul class="templates-filter-list">
     <li><button class="templates-filter-item active">По цене</button></li>
     <li><button class="templates-filter-item">По типу</button></li>
@@ -109,7 +112,7 @@
   <div class="templates-img"><img src="img/pink.jpg" width="360" height="576" alt="Шаблон Pink"></div><div class="templates-description"><header>Pink app</header><p>Продуктовый лендинг<br>
 приложения для iOS и Android</p><button class="btn">9 900 руб.</button></div></div>
   <div class="templates-item">
-  <div class="templates-img"><img src="img/barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop"></div><div class="templates-description"><header>Barbershop</header><p>Сайт салоны красоты.<br>Для мужчин, да.</p><button class="btn">9 900 руб.</button></div></div>
+  <div class="templates-img"><img src="img/barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop"></div><div class="templates-description"><header>Barbershop</header><p>Сайт салоны красоты.<br>Для мужчин, да.</p><button class="btn">9 900 руб.</button></div></div>
   <div class="templates-item">
   <div class="templates-img"><img src="img/mishka.jpg" width="360" height="576" alt="Шаблон Mishka"></div><div class="templates-description"><header>Mishka</header><p>Интернет-магазин<br> 
 вязаных игрушек</p><button class="btn">9 900 руб.</button></div></div>
@@ -128,28 +131,27 @@
 </ul>
 </section>
 </section>
-</main>
 <section class="map">
       <div id="map"></div>
       <p>
         <img
           src="img/map.png"
-          width="100%"
-          height="416px"
+          
+          height="416"
           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
         />
         </p>
       
       <div class="contacts container">
-        <div class="contacts-info"><h3><b>NЁRDS DESIGN STUDIO</b></h3><p>191186, Санкт-Петербург,</br> 
-ул. Б. Конюшенная, д. 19/8</br></p>
+        <div class="contacts-info"><h3><b>NЁRDS DESIGN STUDIO</b></h3><p>191186, Санкт-Петербург,<br> 
+   ул. Б. Конюшенная, д. 19/8<br></p>
 
-<p>тел. +7 (812) 275-75-75</p>
-<button class="write-us btn">Напишите нам</button></div>
-</div>
+   <p>тел. +7 (812) 275-75-75</p>
+   <button class="write-us btn">Напишите нам</button></div>
+   </div>
 
-      </section> 
-    </main>
+    </section> 
+  </main>
     <footer class="main-footer">
       <div class="container">
         <div class="social">
@@ -166,7 +168,7 @@
     </footer>
     
     <section class="modal modal-feedback">
-      <h2>Напишите нам</h2>
+      <h3>Напишите нам</h3>
       <form
             class="modal-feedback-form"
             action="https://echo.htmlacademy.ru/"
@@ -191,10 +193,8 @@
     </section>
     <script src="script.js"></script>
       <script
-      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
-      type="text/javascript"
-    ></script>
-    <script src="map.js" type="text/javascript"></script>
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="map.js"></script>
 
   </body>
 </html>

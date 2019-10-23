@@ -53,7 +53,7 @@ input[type="radio"].visually-hidden {
   -webkit-clip-path: inset(100%);
 
   clip-path: inset(100%);
-  clip: rect (0 0 0 0);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -282,7 +282,8 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.main-header h3 {
+.main-header h3,
+h2 {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -1044,12 +1045,13 @@ input[type="radio"].visually-hidden {
 }
 
 .filters legend,
-.templates h3,
-.templat header {
+.templates h4,
+.templates header {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
 }
 
 .range-controls {
@@ -1294,6 +1296,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-left: 225px;
 }
 
 .templates-filter-dir {
@@ -1301,6 +1304,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   width: 42px;
@@ -1315,9 +1319,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
-}
-.templates-filter-dir-item {
-  margin-left: 18px;
 }
 
 .templates-filter-dir-item path {
