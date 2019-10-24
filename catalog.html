@@ -2,11 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Каталог работ</title>
     <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower"
@@ -133,17 +132,17 @@
 </section>
 <section class="map">
       <div id="map"></div>
-      <p>
-        <img
-          src="img/map.png"
-          
-          height="416"
-          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
-        />
-        </p>
+      <div class="map-wrapper">
+          <img
+            src="img/map.png"
+            width="1440"
+            height="416"
+            alt="Карта офиса компании"
+          />
+        </div>
       
       <div class="contacts container">
-        <div class="contacts-info"><h3><b>NЁRDS DESIGN STUDIO</b></h3><p>191186, Санкт-Петербург,<br> 
+        <div class="contacts-info"><h3><strong>NЁRDS DESIGN STUDIO</strong></h3><p>191186, Санкт-Петербург,<br> 
    ул. Б. Конюшенная, д. 19/8<br></p>
 
    <p>тел. +7 (812) 275-75-75</p>
@@ -161,7 +160,7 @@
         <li><a class="social-btn" href="#"><span class="visually-hidden">Инстаграм</span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 004 10.5a6.5 6.5 0 1013 0 6.45 6.45 0 00-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg></a></li>
       </ul></div>
       <div class="footer-text">
-      <b>Давайте дружить, это выгодно!</b><p>Скидка 10% для друзей из социальных сетей.</p>
+      <strong>Давайте дружить, это выгодно!</strong><p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
       </div>
       <div id="overlay"></div>
@@ -191,10 +190,10 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script src="script.js"></script>
+    <script src="script.min.js"></script>
       <script
       src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="map.js"></script>
+    <script src="map.min.js"></script>
 
   </body>
 </html>
