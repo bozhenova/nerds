@@ -553,9 +553,9 @@ h2 {
   z-index: 100;
   top: -370px;
   left: 0;
-  margin: 0;
+
   width: 209px;
-  height: 209px;
+
   padding: 54px 60px 50px 50px;
   background-color: #ffffff;
 }
@@ -1372,7 +1372,7 @@ h2 {
 .templates-img::before {
   content: "";
   position: absolute;
-  top: 34px;
+  top: 36px;
   left: 0;
   width: 360px;
   height: 40px;
@@ -1391,10 +1391,10 @@ h2 {
 .templates-description {
   position: absolute;
   display: none;
-  top: 420px;
+  bottom: 8px;
   left: 0px;
   width: 360px;
-  height: 157px;
+  min-height: 157px;
   background-color: #eeeeee;
   text-align: center;
   z-index: 10;
